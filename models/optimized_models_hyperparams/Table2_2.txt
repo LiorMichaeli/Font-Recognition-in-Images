@@ -1,0 +1,7 @@
+number_of_ResNet_blocks: 3
+starting_number_of_channels: 32
+number_of_fc_layers: 2
+fc1_out_features: 6335
+fc2_out_features: 2478
+lr: 0.0020490255833431176
+weight_decay: 0.0006522659334150185
