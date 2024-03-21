@@ -60,7 +60,7 @@ In this course, I was working on a project dealing with the task of font recogni
 
 Font recognition is a very important task, and it can help a lot to many people. For example, font is one of the most fundamental concepts in design, and therefore automatic font recognition from an image will help a lot to designers. As we know, Deep learning approaches are applied to many domains and tasks today, including Document Analysis tasks. In this competition, we needed to propose solutions for font recognition in images task on a special dataset, which we were provided with in the competition.
 
-In the competition I wrote code and I wrote a technical report on the project in the format of a paper.
+In the competition, I wrote code and I wrote a technical report on the project in the format of a paper.
 More detailed information appears in the technical report.
 
 I was very enthusiastic and enjoyed the project and I hope you will be enthusiastic about it too!
@@ -113,21 +113,21 @@ Here is the explanation of the role of each folder in the project:
 
 * Images for README: Folder that contains images for README.
 
-* data: Folder that need to contain the train.h5 and test.h5 files.
-  If you need the data files go to the Download data section in Getting Started section.
+* data: Folder that needs to contain the train.h5 and test.h5 files.
+  If you need the data files go to the Download data section in the Getting Started section.
 
 * models:
 
-  * models_predictions_on_test: Contains the submissions files, i.e., the models predictions on the test dataset.
+  * models_predictions_on_test: Contains the submissions files, i.e., the model's predictions on the test dataset.
   
-  * models_weights: Folder that need to contain the model's weights of the models that appeared in the report.
-	  If you need the model's weights of the models that appeared in the report, go to the Download models weights section in Getting Started section.
+  * models_weights: Folder that needs to contain the model's weights of the models that appeared in the report.
+	  If you need the model weights of the models that appeared in the report, go to the Download models weights section in the Getting Started section.
  
   * optimized_models_params: Contain the hyperparameters of the optimized models that appeared in the report.
 
 * report: Folder that contains the technical report and his figures.
   * report.pdf: The technical report of the project
-	* figures: Contains the figures that appeared in the technical report
+  * figures: Contains the figures that appeared in the technical report
 
 * src: Folder that contains the src code files of the project
 	* config file: Has the configurations and constants of the project
@@ -151,7 +151,7 @@ Here is the explanation of the role of each folder in the project:
 
 * README.md: The README file of the project
 
-* requirments.txt: File that contains all the requirements of this project. To use this file do the following steps:
+* requirments.txt: File that contains all the requirements of this project.
 
 Note: 
 In this project, I left only the code of the models described in Tables 1, 2, and 3 in the report.
@@ -205,8 +205,8 @@ I went about the complete process of the project in the technical report.
 To download the data for the project, follow these simple steps:
 1. Go to the Google Drive Link file in the data folder.
 2. Go the the link in the Google Drive Link file.
-3. Go to data folder and download from this folder the train.h5 and test.h5 files.
-4. Put these files in the data folder(The data folder of the project, where the Google Drive Link file located).
+3. Go to the data folder and download from this folder the train.h5 and test.h5 files.
+4. Put these files in the data folder(The data folder of the project, where the Google Drive Link file is located).
 
 ### Download models weights
 
@@ -217,7 +217,7 @@ I went about the complete process of the project in the technical report.
 To download the model's weights of the models that appeared in the report, follow these simple steps:
 1. Go to the Google Drive Link file in the models\models_weights folder.
 2. Go the the link in the Google Drive Link file.
-3. Go to models_weights folder and download from this folder the model's weights that you want to load.
+3. Go to the models_weights folder and download from this folder the model's weights that you want to load.
 4. Put these files in the models\models_weights folder(The models\models_weights folder of the project, where the Google Drive Link file located).   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -254,7 +254,7 @@ These are the main resources that helped me in the project, and I want to give c
 * [For README](https://github.com/othneildrew/Best-README-Template/tree/master#readme-top)
 * [For Markdown Badges](https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#table-of-contents)
   
-And I used many more resources like sites, videos and papers. Many of them have a reference in the technical report.
+And I used many more resources like sites, videos, and papers. Many of them have a reference in the technical report.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
