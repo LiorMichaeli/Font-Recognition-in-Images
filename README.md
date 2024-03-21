@@ -31,11 +31,15 @@
       </ul>
     </li>
     <li>
+      <a href="#project-structure">Project structure</a>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#Download-data">Download data</a></li>
+        <li><a href="#download-data">Download data</a></li>
+        <li><a href="#download-models-weights">Download model's weights</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -54,7 +58,11 @@ Welcome to the font recognition in images project!
 I participated in a master's degree course dealing with computer vision and deep learning.
 In this course, I was working on a project dealing with the task of font recognition in images (when there was a competition between the students in the class).
 
+Font recognition is a very important task, and it can help a lot to many people. For example, font is one of the most fundamental concepts in design, and therefore automatic font recognition from an image will help a lot to designers. As we know, Deep learning approaches are applied to many domains and tasks today, including Document Analysis tasks. In this competition, we needed to propose solutions for font recognition in images task on a special dataset, which we were provided with in the competition.
+
 In the competition I wrote code and I wrote a technical report on the project in the format of a paper.
+More detailed information appears in the technical report.
+
 I was very enthusiastic and enjoyed the project and I hope you will be enthusiastic about it too!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -75,24 +83,102 @@ The main libraries that I used in this project are:
 
 
 
+<!-- PROJECT STRUCTURE -->
+## Project structure
+The project has the following structure:
+
+```
+├───Images for README
+├───data
+├───models
+│   ├───models_predictions_on_test
+│   ├───models_weights
+│   └───optimized_models_hyperparams
+├───report
+│   ├───report.pdf
+│   └───figures
+├───src
+    ├───config
+    ├───data
+    ├───examples
+    ├───models
+    ├───visualization
+    └───main.py
+LICENSE.txt
+README.md
+requirments.txt
+```
+
+Here is the explanation of the role of each folder in the project:
+
+* Images for README: Folder that contains images for README.
+
+* data: Folder that need to contain the train.h5 and test.h5 files.
+  If you need the data files go to the Download data section in Getting Started section.
+
+* models:
+
+  * models_predictions_on_test: Contains the submissions files, i.e., the models predictions on the test dataset.
+  
+  * models_weights: Folder that need to contain the model's weights of the models that appeared in the report.
+	  If you need the model's weights of the models that appeared in the report, go to the Download models weights section in Getting Started section.
+ 
+  * optimized_models_params: Contain the hyperparameters of the optimized models that appeared in the report.
+
+* report: Folder that contains the technical report and his figures.
+  * report.pdf: The technical report of the project
+	* figures: Contains the figures that appeared in the technical report
+
+* src: Folder that contains the src code files of the project
+	* config file: Has the configurations and constants of the project
+
+  * data: Files that handle the data
+
+  * examples: Files that contain code examples for the models in the report.
+	  These files have functions that show all the results of these models,
+	  and training and optimization functions for these models.
+	
+  * models: Files that contain the code of the models that appeared in the report.
+
+  * visualization: Files that have functions for visualization of the data and the model's predictions
+
+  * main.py: Has code that loads the final model and creates for him a submission file.
+	  In the main file, there are Code snippets that are in comments. 
+	  These Code snippets show examples of the project using the example files and show data samples
+	  and data distribution. If you want you can run these Code snippets.
+
+* LICENSE.txt: The LICENSE file of the project
+
+* README.md: The README file of the project
+
+* requirments.txt: File that contains all the requirements of this project. To use this file do the following steps:
+
+Note: 
+In this project, I left only the code of the models described in Tables 1, 2, and 3 in the report.
+For example, I didn't put in my code my little experiment with Multi Neural networks that was described in the report. 
+In summary, I left only the code for production.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To see the Image segmentation for self-driving car Jupyter Notebook file properly, you must have to get a local copy up and running my project on your computer.
-This is because, on the GitHub site, the Image segmentation for self-driving car Jupyter Notebook file does not identify the images.
-To get a local copy up and running my project on your computer, follow these simple example steps.
+To get a local copy up and running my project on your computer, follow these simple steps.
 
 ### Prerequisites
 
-Firstly, you need to have an app like Visual Studio Code, PyCharm, or another app that supports Python.
+Firstly, you need to have an IDE like Visual Studio Code, PyCharm, or another IDE that supports Python.
 
-After this, you need to ensure that you have all the libraries that I described in section 4 in the Image segmentation for self-driving car Jupyter Notebook file.
-If you do not have a library you can install her in the terminal.
-For example, if you want to install the TensorFlow library you can write in the terminal:
+After this, you need to install all the libraries that I used in the project.
+To do this, follow these simple steps:
 
-```
-pip install tensorflow
-```
+1. Open the terminal in the project folder.
+   
+2. Write in the terminal:
+   ```
+    pip install -r requirments.txt
+   ```
 
 ### Installation
 
@@ -107,25 +193,32 @@ This is how you can install my project on your computer:
 
 3. Clone the repo, i.e., write in the terminal:
    ```
-   git clone https://github.com/LiorMichaeli/Image-segmentation-for-self-driving-car
+   git clone https://github.com/LiorMichaeli/Font-Recognition-in-Images.git
    ```
 
 ### Download data
 
 If you want to run and train the models yourself, you need to download the data.
-If you only want to see my notebook and what I did, this is not necessary,
-because I went about the complete process of the project along with code snippets and with results.
+If you only want to see my code and the technical report, this is not necessary.
+I went about the complete process of the project in the technical report.
 
-To download the data for the project, you need to go and create a user.
-After you create a user, you need to go to Download and download these files:
-* gtFine_trainvaltest.zip
-* leftImg8bit_trainvaltest.zip
+To download the data for the project, follow these simple steps:
+1. Go to the Google Drive Link file in the data folder.
+2. Go the the link in the Google Drive Link file.
+3. Go to data folder and download from this folder the train.h5 and test.h5 files.
+4. Put these files in the data folder(The data folder of the project, where the Google Drive Link file located).
 
-Now create a folder with the name 'data' and put these two folders into him(of course after extracting),
-and put the data folder in the main project folder(for example, where the Images folder is located).
+### Download models weights
 
+If you want to load the model's weights of the models that appeared in the report.
+If you only want to see my code and the technical report, this is not necessary.
+I went about the complete process of the project in the technical report.
 
-Now, enter the Image segmentation for the self-driving car Jupyter Notebook file.
+To download the model's weights of the models that appeared in the report, follow these simple steps:
+1. Go to the Google Drive Link file in the models\models_weights folder.
+2. Go the the link in the Google Drive Link file.
+3. Go to models_weights folder and download from this folder the model's weights that you want to load.
+4. Put these files in the models\models_weights folder(The models\models_weights folder of the project, where the Google Drive Link file located).   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +238,7 @@ I would love to hear from you what you think about the project.
 
 Lior Michaeli - [@LinkedIn](https://www.linkedin.com/in/liormichaeli/) - liorm0995@gmail.com
 
-Project Link: [https://github.com/LiorMichaeli/Image-segmentation-for-self-driving-car](https://github.com/LiorMichaeli/Image-segmentation-for-self-driving-car)
+Project Link: [https://github.com/LiorMichaeli/Font-Recognition-in-Images](https://github.com/LiorMichaeli/Font-Recognition-in-Images)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -156,14 +249,12 @@ Project Link: [https://github.com/LiorMichaeli/Image-segmentation-for-self-drivi
 These are the main resources that helped me in the project, and I want to give credit to them:
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [City Scapes site](https://www.cityscapes-dataset.com/dataset-overview/#features)
-* [Unet paper](https://arxiv.org/pdf/1505.04597.pdf)
-* [Generalised Dice overlap as a deep learning loss function for highly unbalanced segmentations paper](https://arxiv.org/pdf/1707.03237v3.pdf)
-* [Kaggle site](https://www.kaggle.com/datasets)
+* [Kaggle site](https://www.kaggle.com/)
 * [Medium site](https://medium.com/)
 * [For README](https://github.com/othneildrew/Best-README-Template/tree/master#readme-top)
-
-And I used many more resources like sites, videos, and images. Many of them have a link on the Image segmentation for self-driving car Jupyter Notebook file.
+* [For Markdown Badges](https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#table-of-contents)
+  
+And I used many more resources like sites, videos and papers. Many of them have a reference in the technical report.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
